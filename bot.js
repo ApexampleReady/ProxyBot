@@ -5,11 +5,11 @@ function getRandomInt(min, max) {
 }
 
 async function addBot(){
-    var username1 = 'Nieczlowiek' + getRandomInt(1, 1000)
-    console.log(username1)
+    var username = 'Nieczlowiek' + getRandomInt(1, 1000)
+    console.log(username)
     const bot = mineflayer.createBot({
-    host: '127.0.0.1', // minecraft server ip
-    username: username1,// minecraft username
+    host: 'mfs1', // minecraft server ip
+    username: username,// minecraft username
     auth: 'offline', // for offline mode servers, you can set this to 'offline',
     uuid: '208d4fefb3684e48b121aa981b9b8be8', // optional for online servers
     port: 25577         // only set if you need a port that isn't 25565
